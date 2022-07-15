@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What if we...? 🥺</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+          segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+          arial, sans-serif;
+      }
+
+      #fingers,
+      #face {
+        display: flex;
+        justify-content: center;
+      }
+
+      #face h1 {
+        font-size: 8rem;
+        margin: 0;
+        margin-top: 4rem;
+      }
+
+      #fingers h1 {
+        font-size: 6rem;
+        margin: 0;
+      }
+
+      @keyframes animations-left {
+        0% {
+          transform: translateX(0%);
+        }
+        50% {
+          transform: translateX(-50%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+      @keyframes animations-right {
+        0% {
+          transform: translateX(0%);
+        }
+        50% {
+          transform: translateX(50%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+      #left {
+        animation: animations-left ease-in-out 1s infinite;
+      }
+
+      #right {
+        animation: animations-right ease-in-out 1s infinite;
+      }
+
+      h1.title {
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="face">
+        <h1>🥺</h1>
+      </section>
+      <section id="fingers">
+        <h1 id="left" data-offset="-100%">👉</h1>
+        <h1 id="right" data-offset="100%">👈</h1>
+      </section>
+    </main>
+  </body>
+</html>
